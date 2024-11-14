@@ -37,6 +37,7 @@ export const internationalization = {
           },
         },
       },
+      viewPackageOnNpm:"View package on npm"
     },
     "french": {
       header: {
@@ -70,6 +71,7 @@ export const internationalization = {
           },
         },
       },
+      viewPackageOnNpm:"Voir le package sur npm"
     },
     "arabic": {
         header: {
@@ -103,7 +105,10 @@ export const internationalization = {
             },
             },
         },
+        viewPackageOnNpm:"عرض الحزمة على npm"
     },
 
 };
+
+export const packageLink = 'https://www.npmjs.com/package/moroccan-regions-cities';
  

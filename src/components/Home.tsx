@@ -14,9 +14,10 @@ import {
     countUnassignedCities
 } from 'moroccan-regions-cities';
 
-import {languages,internationalization} from '@/constants';
+import {languages,internationalization,packageLink} from '@/constants';
 import { Card, CardContent } from "@/components/ui/card";
 import { Language } from './Header';
+
 export default function Home() {
   const [language, setLanguage] = useState<Language>(
     (localStorage.getItem("language") as Language) || languages.english
@@ -141,6 +142,9 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <a  href={packageLink} target='_blank' className='py-5 w-full text-center block text-xl font-[500] text-white bg-black rounded-lg mt-3 cursor-pointer'>
+        {internationalization[language]?.viewPackageOnNpm}
+      </a>
     </div>
   )
 }
